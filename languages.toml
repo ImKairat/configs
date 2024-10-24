@@ -1,0 +1,16 @@
+# ~/.config/helix/config.toml
+[[language]]
+name = "Python"
+language-id = "python"
+file-types = ["py"]
+language-servers = ["pyright"]
+scope = "source.python"
+
+
+[[language]]
+name = "Rust"
+language-id = "rust"
+file-types = ["rs"]
+language-servers = ["rust-analyzer"]
+scope = "source.rust"
+
