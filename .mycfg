@@ -1,0 +1,107 @@
+######################################################
+
+########   M   M  y   y    ccc  fffff  ggg    ########
+########   MM MM   y y    c     f     g       ########
+########   M M M    y     c     ffff  g  gg   ########
+########   M   M    y     c     f     g   g   ########
+########   M   M    y      ccc  f     gggg    ########
+                                               
+######################################################
+
+# System-Aliases:
+alias c='clear'
+alias b='cd -'
+alias x='cd ..'
+alias q='exit'
+alias p='pwd | xclip -selection clipboard && pwd'
+alias ns='netstat'
+alias bsh='sudo vim ~/.bashrc'
+alias sb='source ~/.bashrc'
+
+# User-Aliases:
+alias o='xdg-open'
+alias n='nano'
+alias ~='cd ~'
+alias r='cd /'
+alias m='ncdu'
+alias si='sudo apt-get install'
+alias sr='sudo apt-get remove'
+alias ss='sudo apt-get search'
+alias rg='ranger'
+alias bt='btop'
+alias nf='neofetch'
+alias ipy='ipython'
+alias h='history'
+alias i='tldr'
+alias d='cd ~/Desktop'
+alias qq='sudo shutdown -h now'
+alias st='sublime-text'
+alias py='python'
+alias bp='bpython'
+alias psp='ps aux | grep'
+alias hdd='cd /mnt/sda2/'
+
+# Editor-Aliases:
+alias hd='hydrapaper'
+alias nv='nvim'
+alias v='vim'
+alias vc='vim ~/.vimrc'
+alias f='fzf --height 40% | xclip -selection clipboard'
+alias fo='fzf | xdg-open'
+alias nff='nano $(fzf --height 40% )'
+alias vff='nvim $(fzf --height 40% )'
+alias fdc='cd $(find . -type d -print | fzf --height 40% )'
+alias fd='find . -type d -print | fzf --height 40% | xclip -selection clipboard'
+alias fhd='find ~ -type d -print | fzf --height 40% | xclip -selection clipboard'
+alias fhdc='cd $(find ~ -type d -print | fzf --height 40% )'
+alias vfd='nvim $(find . -type d -print | fzf --height 40% )'
+alias vfhd='nvim $(find ~ -type d -print | fzf --height 40% )'
+alias pfhd='nautilus $(find ~ -type d -print | fzf --height 40% )'
+alias pfd='nautilus $(find . -type d -print | fzf --height 40% )'
+
+# Tmux:
+alias t='tmux'
+alias tl='tmux ls'
+alias tk='tmux kill-session -t'
+alias tn='tmux new -s'
+
+#conda-Aliases:
+alias base='conda activate base'
+alias ds='conda activate ds'
+alias geo='conda activate geo'
+alias app='conda activate app'
+alias jn='jupyter-notebook'
+alias condad='conda deactivate'
+
+# pip-Aliases:
+alias pl='pip list'
+alias pi='pip install'
+alias pir='pip install -r requirements.txt'
+alias pui='pip uninstall'
+
+# Git-Aliases:
+alias glog='git log --all --graph'
+alias glg='git log --all --graph --oneline'
+alias gstat='git status'
+alias gac='git add . && git commit -m'
+alias gbr='git branch'
+alias gnb='git checkout -b'
+alias gch='git checkout'
+
+#Cython-Aliases:
+alias cize='python setup.py build_ext --inplace'
+
+# some more ls aliases
+alias ll='ls -l'
+alias la='ls -A'
+alias lla='ls -la'
+alias l='ls -CF'
+
+# psql:
+alias psql='sudo -u postgres -i'
+
+# mirrors:
+alias upm='rate-mirrors --disable-comments-in-file --entry-country=KG --protocol=https manjaro --max-delay 7200 | sudo tee /etc/pacman.d/mirrorlist'
+
+# Zoxide:
+eval "$(zoxide init bash)"
