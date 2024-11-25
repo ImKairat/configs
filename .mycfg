@@ -18,15 +18,20 @@ alias ns='netstat'
 alias bsh='sudo vim ~/.bashrc'
 alias sb='source ~/.bashrc'
 
-# User-Aliases:
+# Base-Aliases:
+alias mk='make'
+alias rr='rustrover'
+alias cr='cursor'
 alias o='xdg-open'
 alias n='nano'
 alias ~='cd ~'
 alias r='cd /'
 alias m='ncdu'
-alias si='sudo apt-get install'
-alias sr='sudo apt-get remove'
-alias ss='sudo apt-get search'
+alias si='sudo apt install'
+alias sr='sudo apt remove'
+alias ss='sudo apt search'
+alias suu='sudo apt upgrade && sudo apt update'
+alias t='tmux'
 alias rg='ranger'
 alias bt='btop'
 alias nf='neofetch'
@@ -42,7 +47,7 @@ alias psp='ps aux | grep'
 alias hdd='cd /mnt/sda2/'
 
 # Editor-Aliases:
-alias hd='hydrapaper'
+alias mk='make'
 alias nv='nvim'
 alias v='vim'
 alias vc='vim ~/.vimrc'
@@ -87,6 +92,15 @@ alias gac='git add . && git commit -m'
 alias gbr='git branch'
 alias gnb='git checkout -b'
 alias gch='git checkout'
+
+# Docker-Aliases:
+alias dr='sudo docker'
+
+# Python:
+alias cv='python3 -m venv'
+alias av='source venv/bin/activate'
+alias adv='source .venv/bin/activate'
+alias ipython='source ~/ipenv/bin/activate && ipython'
 
 #Cython-Aliases:
 alias cize='python setup.py build_ext --inplace'
