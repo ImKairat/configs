@@ -29,6 +29,8 @@ install:
 	else \
 		echo  "$(COLOR_INFO).bashrc already contains source command for .mycfg$(COLOR_RESET)"; \
 	fi
+	@vim plugins.vim -c 'source %' -c 'PlugInstall' -c 'qa!'
+	@echo "$(COLOR_SUCCESS)All Vim-plugins in ~/.vimrc was installed!$(COLOR_RESET)"
 	@echo ""
 
 # Target to remove the installed files
@@ -61,3 +63,4 @@ help:
 	@echo  "$(COLOR_TARGET)  uninstall $(COLOR_DESCRIPTION)Remove the installed configuration files and update .bashrc$(COLOR_RESET)"
 	@echo  "$(COLOR_TARGET)  clean     $(COLOR_DESCRIPTION)Clean up temporary files or backups$(COLOR_RESET)"
 	@echo ""
+
