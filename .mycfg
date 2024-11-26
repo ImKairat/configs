@@ -87,7 +87,7 @@ alias pui='pip uninstall'
 # Git-Aliases:
 alias glog='git log --all --graph'
 alias glg='git log --all --graph --oneline'
-alias gstat='git status'
+alias gst='git status'
 alias gac='git add . && git commit -m'
 alias gbr='git branch'
 alias gnb='git checkout -b'
