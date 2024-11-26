@@ -1,6 +1,6 @@
 # Configuration Setup
 
-This project provides an automated way to install and manage custom configuration files for your development environment. 
+This project offers an automated solution for installing and managing custom configuration files for the Linux terminal and the Vim text editor.
 It includes configuration for `.mycfg` and `.vimrc`, and it automates the setup of these files in your home directory. 
 Additionally, the setup includes modifying your `.bashrc` to source the `.mycfg` file if it exists.
 
