@@ -25,6 +25,7 @@ install:
 		echo "if [ -f ~/.mycfg ]; then" >> $(BASHRC); \
 		echo "    source ~/.mycfg" >> $(BASHRC); \
 		echo "fi" >> $(BASHRC); \
+		@bash ~/.bashrc \
 		echo  "$(COLOR_SUCCESS)Added source command for .mycfg to .bashrc$(COLOR_RESET)"; \
 	else \
 		echo  "$(COLOR_INFO).bashrc already contains source command for .mycfg$(COLOR_RESET)"; \
