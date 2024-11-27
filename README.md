@@ -1,7 +1,7 @@
 # Configuration Setup
 
-This project offers an automated solution for installing and managing custom configuration files for the Linux terminal and the Vim text editor.
-It includes configuration for `.mycfg` and `.vimrc`, and it automates the setup of these files in your home directory. 
+This project offers an automated solution for installing and managing custom configuration files for the Linux terminal and the Vim text editor.  
+It includes configuration for `.mycfg` and `.vimrc`, and it automates the setup of these files in your home directory.  
 Additionally, the setup includes modifying your `.bashrc` to source the `.mycfg` file if it exists.
 
 ## Features
@@ -18,10 +18,23 @@ Additionally, the setup includes modifying your `.bashrc` to source the `.mycfg`
 
 ## Usage
 
+### Cloning the Repository and Navigating to the Directory
+
+1. Clone the repository using the `git` command:
+
+    ```bash
+    git clone https://github.com/ImKairat/configs.git
+    ```
+
+2. Change into the project directory:
+
+    ```bash
+    cd config-setup
+    ```
+
 ### Installing Configuration Files
 
 To install the configuration files and update `.bashrc`, run the following command:
 
 ```bash
 make install
-

@@ -10,6 +10,7 @@ set updatetime=300
 
 call plug#begin()
 
+Plug 'elzr/vim-json'
 Plug 'jiangmiao/auto-pairs'
 Plug 'hdima/python-syntax'
 Plug 'dracula/dracula-theme'
