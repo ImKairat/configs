@@ -6,6 +6,8 @@ set mouse=a
 autocmd CursorHold * silent! write
 set updatetime=300
 
+" Disable swap files:
+set noswapfile
 
 
 call plug#begin()
