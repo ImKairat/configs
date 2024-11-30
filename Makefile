@@ -30,8 +30,13 @@ install:
 	else \
 		echo  "$(COLOR_INFO).bashrc already contains source command for .mycfg$(COLOR_RESET)"; \
 	fi
+	
 	@vim plugins.vim -c 'source %' -c 'PlugInstall' -c 'qa!'
 	@echo "$(COLOR_SUCCESS)All Vim-plugins in ~/.vimrc was installed!$(COLOR_RESET)"
+	
+	@cp zed/settings.json ~/.config/zed
+	@echo "$(COLOR_SUCCESS)The Zed editor has been set up successfully!$(COLOR_RESET)"
+	
 	@echo ""
 
 # Target to remove the installed files
