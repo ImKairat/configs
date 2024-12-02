@@ -29,7 +29,7 @@ Additionally, the setup includes modifying your `.bashrc` to source the `.mycfg`
 2. Change into the project directory:
 
     ```bash
-    cd config-setup
+    cd configs
     ```
 
 ### Installing Configuration Files
