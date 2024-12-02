@@ -21,7 +21,7 @@ alias sb='source ~/.bashrc'
 # Base-Aliases:
 alias mk='make'
 alias rr='rustrover'
-alias cr='cursor'
+alias cs='cursor'
 alias o='xdg-open'
 alias n='nano'
 alias ~='cd ~'
