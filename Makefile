@@ -69,4 +69,3 @@ help:
 	@echo  "$(COLOR_TARGET)  uninstall $(COLOR_DESCRIPTION)Remove the installed configuration files and update .bashrc$(COLOR_RESET)"
 	@echo  "$(COLOR_TARGET)  clean     $(COLOR_DESCRIPTION)Clean up temporary files or backups$(COLOR_RESET)"
 	@echo ""
-

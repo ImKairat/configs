@@ -8,117 +8,117 @@
                                                
 ######################################################
 
-# System-Aliases:
-alias c='clear'
-alias b='cd -'
-alias x='cd ..'
-alias q='exit'
-alias p='pwd | xclip -selection clipboard && pwd'
-alias ns='netstat'
-alias bsh='sudo vim ~/.bashrc'
-alias sb='source ~/.bashrc'
+# System-Aliases:  
+alias c='clear'  # Clear the terminal
+alias b='cd -'  # Go back to the previous directory
+alias x='cd ..'  # Go up one directory
+alias q='exit'  # Exit the terminal
+alias p='pwd | xclip -selection clipboard && pwd'  # Copy current directory to clipboard
+alias ns='netstat'  # Show network statistics
+alias bsh='sudo vim ~/.bashrc'  # Edit bashrc with sudo
+alias sb='source ~/.bashrc'  # Source bashrc to apply changes
 
-# Base-Aliases:
-alias mk='make'
-alias rr='rustrover'
-alias cs='cursor'
-alias o='xdg-open'
-alias n='nano'
-alias ~='cd ~'
-alias r='cd /'
-alias m='ncdu'
-alias si='sudo apt install'
-alias sr='sudo apt remove'
-alias ss='sudo apt search'
-alias suu='sudo apt upgrade && sudo apt update'
-alias t='tmux'
-alias rg='ranger'
-alias bt='btop'
-alias nf='neofetch'
-alias ipy='ipython'
-alias h='history'
-alias i='tldr'
-alias d='cd ~/Desktop'
-alias qq='sudo shutdown -h now'
-alias st='sublime-text'
-alias py='python'
-alias bp='bpython'
-alias psp='ps aux | grep'
-alias hdd='cd /mnt/sda2/'
+# Base-Aliases: 
+alias mk='make'  # Run make command
+alias rr='rustrover'  # Run rustrover
+alias cs='cursor'  # Cursor command
+alias o='xdg-open'  # Open files with default application
+alias n='nano'  # Open nano text editor
+alias ~='cd ~'  # Go to home directory
+alias r='cd /'  # Go to root directory
+alias m='ncdu'  # Open ncdu for disk usage
+alias si='sudo apt install'  # Install package with apt
+alias sr='sudo apt remove'  # Remove package with apt
+alias ss='sudo apt search'  # Search for package with apt
+alias suu='sudo apt upgrade && sudo apt update'  # Update and upgrade packages
+alias t='tmux'  # Start tmux session
+alias rg='ranger'  # Open ranger file manager
+alias bt='btop'  # Open btop for system monitoring
+alias nf='neofetch'  # Display system information
+alias ipy='ipython'  # Start IPython shell
+alias h='history'  # Show command history
+alias i='tldr'  # Show simplified man pages
+alias d='cd ~/Desktop'  # Go to Desktop directory
+alias qq='sudo shutdown -h now'  # Shutdown the system
+alias st='sublime-text'  # Open Sublime Text
+alias py='python'  # Run Python
+alias bp='bpython'  # Run bpython
+alias psp='ps aux | grep'  # Search processes
+alias hdd='cd /mnt/sda2/'  # Go to specific directory
 
-# Editor-Aliases:
-alias mk='make'
-alias nv='nvim'
-alias v='vim'
-alias vc='vim ~/.vimrc'
-alias f='fzf --height 40% | xclip -selection clipboard'
-alias fo='fzf | xdg-open'
-alias nff='nano $(fzf --height 40% )'
-alias vff='nvim $(fzf --height 40% )'
-alias fdc='cd $(find . -type d -print | fzf --height 40% )'
-alias fd='find . -type d -print | fzf --height 40% | xclip -selection clipboard'
-alias fhd='find ~ -type d -print | fzf --height 40% | xclip -selection clipboard'
-alias fhdc='cd $(find ~ -type d -print | fzf --height 40% )'
-alias vfd='nvim $(find . -type d -print | fzf --height 40% )'
-alias vfhd='nvim $(find ~ -type d -print | fzf --height 40% )'
-alias pfhd='nautilus $(find ~ -type d -print | fzf --height 40% )'
-alias pfd='nautilus $(find . -type d -print | fzf --height 40% )'
+# Editor-Aliases:  
+alias mk='make'  # Run make command
+alias nv='nvim'  # Open Neovim
+alias v='vim'  # Open Vim
+alias vc='vim ~/.vimrc'  # Edit Vim configuration
+alias f='fzf --height 40% | xclip -selection clipboard'  # Fuzzy find and copy to clipboard
+alias fo='fzf | xdg-open'  # Fuzzy find and open file
+alias nff='nano $(fzf --height 40% )'  # Fuzzy find and edit with nano
+alias vff='nvim $(fzf --height 40% )'  # Fuzzy find and edit with Neovim
+alias fdc='cd $(find . -type d -print | fzf --height 40% )'  # Fuzzy find and change directory
+alias fd='find . -type d -print | fzf --height 40% | xclip -selection clipboard'  # Find directory and copy to clipboard
+alias fhd='find ~ -type d -print | fzf --height 40% | xclip -selection clipboard'  # Find home directory and copy to clipboard
+alias fhdc='cd $(find ~ -type d -print | fzf --height 40% )'  # Fuzzy find home directory and change
+alias vfd='nvim $(find . -type d -print | fzf --height 40% )'  # Fuzzy find directory and edit with Neovim
+alias vfhd='nvim $(find ~ -type d -print | fzf --height 40% )'  # Fuzzy find home directory and edit with Neovim
+alias pfhd='nautilus $(find ~ -type d -print | fzf --height 40% )'  # Fuzzy find home directory and open with Nautilus
+alias pfd='nautilus $(find . -type d -print | fzf --height 40% )'  # Fuzzy find directory and open with Nautilus
 
-# Tmux:
-alias t='tmux'
-alias tl='tmux ls'
-alias tk='tmux kill-session -t'
-alias tn='tmux new -s'
+#Tmux-Aliases: 
+alias t='tmux'  # Start tmux session
+alias tl='tmux ls'  # List tmux sessions
+alias tk='tmux kill-session -t'  # Kill specified tmux session
+alias tn='tmux new -s'  # Create new tmux session
 
-#conda-Aliases:
-alias base='conda activate base'
-alias ds='conda activate ds'
-alias geo='conda activate geo'
-alias app='conda activate app'
-alias jn='jupyter-notebook'
-alias condad='conda deactivate'
+#conda-Aliases: 
+alias base='conda activate base'  # Activate base environment
+alias ds='conda activate ds'  # Activate data science environment
+alias geo='conda activate geo'  # Activate geo environment
+alias app='conda activate app'  # Activate app environment
+alias jn='jupyter-notebook'  # Start Jupyter Notebook
+alias condad='conda deactivate'  # Deactivate conda environment
 
-# poetry-Aliases:
-alias pt='poetry'
+# poetry-Aliases:  
+alias pt='poetry'  # Run poetry command
 
-# pip-Aliases:
-alias pl='pip list'
-alias pi='pip install'
-alias pir='pip install -r requirements.txt'
-alias pui='pip uninstall'
+# pip-Aliases: 
+alias pl='pip list'  # List installed pip packages
+alias pi='pip install'  # Install package with pip
+alias pir='pip install -r requirements.txt'  # Install packages from requirements file
+alias pui='pip uninstall'  # Uninstall package with pip
 
-# Git-Aliases:
-alias glog='git log --all --graph'
-alias glg='git log --all --graph --oneline'
-alias gst='git status'
-alias gac='git add . && git commit -m'
-alias gbr='git branch'
-alias gnb='git checkout -b'
-alias gch='git checkout'
+# Git-Aliases:  
+alias glog='git log --all --graph'  # Show git log graph
+alias glg='git log --all --graph --oneline'  # Show git log graph in one line
+alias gst='git status'  # Show git status
+alias gac='git add . && git commit -m'  # Add and commit changes
+alias gbr='git branch'  # Show git branches
+alias gnb='git checkout -b'  # Create and switch to new branch
+alias gch='git checkout'  # Switch branches
 
-# Docker-Aliases:
-alias dr='sudo docker'
+# Docker-Aliases:  
+alias dr='sudo docker'  # Run Docker with sudo
 
-# Python:
-alias cv='python3 -m venv'
-alias av='source venv/bin/activate'
-alias adv='source .venv/bin/activate'
-alias ipython='source ~/ipenv/bin/activate && ipython'
+# Python:  
+alias cv='python3 -m venv'  # Create Python virtual environment
+alias av='source venv/bin/activate'  # Activate virtual environment
+alias adv='source .venv/bin/activate'  # Activate another virtual environment
+alias ipython='source ~/ipenv/bin/activate && ipython'  # Start IPython with environment
 
-#Cython-Aliases:
-alias cize='python setup.py build_ext --inplace'
+#Cython-Aliases: 
+alias cize='python setup.py build_ext --inplace'  # Build Cython extension in place
 
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias lla='ls -la'
-alias l='ls -CF'
+# some more ls aliases 
+alias ll='ls -l'  # List files in long format
+alias la='ls -A'  # List all files including hidden
+alias lla='ls -la'  # List all files in long format including hidden
+alias l='ls -CF'  # List files with classification
 
-# psql:
-alias psql='sudo -u postgres -i'
+# psql: 
+alias psql='sudo -u postgres -i'  # Run psql as postgres user
 
-# mirrors:
-alias upm='rate-mirrors --disable-comments-in-file --entry-country=KG --protocol=https manjaro --max-delay 7200 | sudo tee /etc/pacman.d/mirrorlist'
+# mirrors: 
+alias upm='rate-mirrors --disable-comments-in-file --entry-country=KG --protocol=https manjaro --max-delay 7200 | sudo tee /etc/pacman.d/mirrorlist'  # Update mirror list
 
-# Zoxide:
-eval "$(zoxide init bash)"
+# Zoxide:  
+eval "$(zoxide init bash)"  # Initialize Zoxide for directory navigation
