@@ -78,6 +78,9 @@ alias app='conda activate app'
 alias jn='jupyter-notebook'
 alias condad='conda deactivate'
 
+# poetry-Aliases:
+alias pt='poetry'
+
 # pip-Aliases:
 alias pl='pip list'
 alias pi='pip install'
