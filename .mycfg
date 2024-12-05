@@ -44,7 +44,7 @@ alias st='sublime-text'  # Open Sublime Text
 alias py='python'  # Run Python
 alias bp='bpython'  # Run bpython
 alias psp='ps aux | grep'  # Search processes
-alias hdd='cd /mnt/sda2/'  # Go to specific directory
+alias hd='cd /mnt/hdd/'  # Go to specific directory
 
 # Editor-Aliases:  
 alias mk='make'  # Run make command
