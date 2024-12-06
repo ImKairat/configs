@@ -95,6 +95,8 @@ alias gac='git add . && git commit -m'  # Add and commit changes
 alias gbr='git branch'  # Show git branches
 alias gnb='git checkout -b'  # Create and switch to new branch
 alias gch='git checkout'  # Switch branches
+alias gds='git diff --stat' # Show difference statistics
+alias gd='git diff ' # Show difference 
 
 # Docker-Aliases:  
 alias dr='sudo docker'  # Run Docker with sudo
