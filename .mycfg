@@ -9,6 +9,7 @@
 ######################################################
 
 # System-Aliases:  
+alias as='pushd ~/configs > /dev/null && make show && popd > /dev/null'
 alias c='clear'  # Clear the terminal
 alias b='cd -'  # Go back to the previous directory
 alias x='cd ..'  # Go up one directory
