@@ -151,6 +151,7 @@ show:
 	@echo "\033[1;32mpui:\033[0m Uninstall package with pip"
 	@echo ""
 	@echo "\033[1;33mGit Commands:$(COLOR_RESET)"
+	@echo "\033[1;32mgpp:\033[0m Pull and push all"
 	@echo "\033[1;32mglog:\033[0m Show git log graph"
 	@echo "\033[1;32mglg:\033[0m Show git log graph in one line"
 	@echo "\033[1;32mgst:\033[0m Show git status"
