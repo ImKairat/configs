@@ -30,7 +30,8 @@ install:
 	else \
 		echo  "$(COLOR_INFO).bashrc already contains source command for .mycfg$(COLOR_RESET)"; \
 	fi
-	
+	@bash ~/.bashrc	
+
 	@vim plugins.vim -c 'source %' -c 'PlugInstall' -c 'qa!'
 	@echo "$(COLOR_SUCCESS)All Vim-plugins in ~/.vimrc was installed!$(COLOR_RESET)"
 	
