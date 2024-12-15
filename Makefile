@@ -120,6 +120,7 @@ show:
 	@printf "\033[1;32mgeo:\033[0m %-40s | \033[1;32mapp:\033[0m %-30s\n" "Activate geo environment" "Activate app environment"
 	@printf "\033[1;32mjn:\033[0m %-40s | \033[1;32mcondad:\033[0m %-30s\n" "Start Jupyter Notebook" "Deactivate conda environment"
 	@printf "\033[1;32mpt:\033[0m %-40s | \033[1;32mpl:\033[0m %-30s\n" "Run pytest command" "List installed pip packages"
+	@printf "\033[1;32mpo:\033[0m %-40s | \033[1;32mpl:\033[0m %-30s\n" "Run pytest command" "List installed pip packages"
 	@printf "\033[1;32mpi:\033[0m %-40s | \033[1;32mpir:\033[0m %-30s\n" "Install package with pip" "Install packages from requirements file"
 	@printf "\033[1;32mpui:\033[0m %-40s\n" "Uninstall package with pip"
 	@echo ""

@@ -79,6 +79,9 @@ alias app='conda activate app'  # Activate app environment
 alias jn='jupyter-notebook'  # Start Jupyter Notebook
 alias condad='conda deactivate'  # Deactivate conda environment
 
+# poetry-Aliases:
+alias po='poetry'  # Run poetry command
+
 # pytest-Aliases:  
 alias pt='pytest'  # Run pytest command
 
