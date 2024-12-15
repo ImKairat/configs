@@ -44,7 +44,7 @@ alias qq='sudo shutdown -h now'  # Shutdown the system
 alias st='sublime-text'  # Open Sublime Text
 alias py='python'  # Run Python
 alias bp='bpython'  # Run bpython
-alias psp='ps aux | grep'  # Search processes
+alias sp='ps aux | grep'  # Search processes
 alias hd='cd /mnt/hdd/'  # Go to specific directory
 
 # Editor-Aliases:  
@@ -79,8 +79,8 @@ alias app='conda activate app'  # Activate app environment
 alias jn='jupyter-notebook'  # Start Jupyter Notebook
 alias condad='conda deactivate'  # Deactivate conda environment
 
-# poetry-Aliases:  
-alias pt='poetry'  # Run poetry command
+# pytest-Aliases:  
+alias pt='pytest'  # Run pytest command
 
 # pip-Aliases: 
 alias pl='pip list'  # List installed pip packages

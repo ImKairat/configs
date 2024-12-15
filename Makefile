@@ -32,6 +32,7 @@ install:
 	fi
 	
 	@vim plugins.vim -c 'source %' -c 'PlugInstall' -c 'qa!'
+	@echo ""
 	@echo "$(COLOR_SUCCESS)All Vim-plugins in ~/.vimrc was installed!$(COLOR_RESET)"
 	
 	@cp zed/settings.json ~/.config/zed
@@ -101,7 +102,7 @@ show:
 	@printf "\033[1;32mh:\033[0m %-40s | \033[1;32mi:\033[0m %-30s\n" "Show command history" "Show simplified man pages"
 	@printf "\033[1;32md:\033[0m %-40s | \033[1;32mqq:\033[0m %-30s\n" "Go to Desktop directory" "Shutdown the system"
 	@printf "\033[1;32mst:\033[0m %-40s | \033[1;32mpy:\033[0m %-30s\n" "Open Sublime Text" "Run Python"
-	@printf "\033[1;32mbp:\033[0m %-40s | \033[1;32mpsp:\033[0m %-30s\n" "Run bpython" "Search processes"
+	@printf "\033[1;32mbp:\033[0m %-40s | \033[1;32msp:\033[0m %-30s\n" "Run bpython" "Search processes"
 	@printf "\033[1;32mhd:\033[0m %-40s | \033[1;32mnv:\033[0m %-30s\n" "Go to specific directory" "Open Neovim"
 	@printf "\033[1;32mv:\033[0m %-40s | \033[1;32mvc:\033[0m %-30s\n" "Open Vim" "Edit Vim configuration"
 	@echo ""
@@ -117,7 +118,7 @@ show:
 	@printf "\033[1;32mbase:\033[0m %-40s | \033[1;32mds:\033[0m %-30s\n" "Activate base environment" "Activate data science environment"
 	@printf "\033[1;32mgeo:\033[0m %-40s | \033[1;32mapp:\033[0m %-30s\n" "Activate geo environment" "Activate app environment"
 	@printf "\033[1;32mjn:\033[0m %-40s | \033[1;32mcondad:\033[0m %-30s\n" "Start Jupyter Notebook" "Deactivate conda environment"
-	@printf "\033[1;32mpt:\033[0m %-40s | \033[1;32mpl:\033[0m %-30s\n" "Run poetry command" "List installed pip packages"
+	@printf "\033[1;32mpt:\033[0m %-40s | \033[1;32mpl:\033[0m %-30s\n" "Run pytest command" "List installed pip packages"
 	@printf "\033[1;32mpi:\033[0m %-40s | \033[1;32mpir:\033[0m %-30s\n" "Install package with pip" "Install packages from requirements file"
 	@printf "\033[1;32mpui:\033[0m %-40s\n" "Uninstall package with pip"
 	@echo ""
