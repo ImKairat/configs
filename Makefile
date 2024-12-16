@@ -142,7 +142,7 @@ show:
 	@echo "\033[1;33mPython Environment Commands:$(COLOR_RESET)"
 	@printf "\033[1;32mcv:\033[0m %-40s | \033[1;32mav:\033[0m %-30s\n" "Create Python virtual environment" "Activate virtual environment"
 	@printf "\033[1;32madv:\033[0m %-40s | \033[1;32mipython:\033[0m %-30s\n" "Activate another virtual environment" "Start IPython with environment"
-	@printf "\033[1;32mcize:\033[0m %-40s\n" "Build Cython extension in place"
+	@printf "\033[1;32mcize:\033[0m %-40s\n | \033[1;32mdv:\033[0m %-40s\n" "Build Cython extension in place" "Deactivate "virtual environment"
 	@echo ""
 	@echo "\033[1;33mFile Listing Commands:$(COLOR_RESET)"
 	@printf "\033[1;32mll:\033[0m %-40s | \033[1;32mla:\033[0m %-30s\n" "List files in long format" "List all files including hidden"

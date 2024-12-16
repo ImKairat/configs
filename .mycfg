@@ -110,6 +110,7 @@ alias dr='sudo docker'  # Run Docker with sudo
 alias cv='python3 -m venv'  # Create Python virtual environment
 alias av='source venv/bin/activate'  # Activate virtual environment
 alias adv='source .venv/bin/activate'  # Activate another virtual environment
+alias dv='deactivate'  # Deactivate virtual environment
 alias ipython='source ~/ipenv/bin/activate && ipython'  # Start IPython with environment
 
 #Cython-Aliases: 
