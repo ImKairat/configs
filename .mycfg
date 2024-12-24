@@ -18,7 +18,7 @@ alias p='pwd | xclip -selection clipboard && pwd'  # Copy current directory to c
 alias ns='netstat'  # Show network statistics
 alias bsh='sudo vim ~/.bashrc'  # Edit bashrc with sudo
 alias sb='source ~/.bashrc'  # Source bashrc to apply changes
-alias ch='history -c && history -w'  # Clear current session history and reload the session
+alias ch='history -c && history -w && clear'  # Clear current session history and reload the session
 
 # Base-Aliases: 
 alias mk='make'  # Run make command
