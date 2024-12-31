@@ -92,7 +92,8 @@ alias pi='pip install'  # Install package with pip
 alias pir='pip install -r requirements.txt'  # Install packages from requirements file
 alias pui='pip uninstall'  # Uninstall package with pip
 
-# Git-Aliases:  
+# Git-Aliases: 
+alias gf='git fetch --all' 
 alias gpp='git pull --all && git push --all'
 alias glog='git log --all --graph'  # Show git log graph
 alias glg='git log --all --graph --oneline'  # Show git log graph in one line
