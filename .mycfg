@@ -107,6 +107,9 @@ alias gd='git diff ' # Show difference
 
 # Docker-Aliases:  
 alias dr='sudo docker'  # Run Docker with sudo
+alias pm='podman'  # Run Podman 
+alias pms='sudo podman'  # Run Podman with sudo
+
 
 # Python:  
 alias cv='python3 -m venv'  # Create Python virtual environment
@@ -128,7 +131,8 @@ alias l='ls -CF'  # List files with classification
 alias psql='sudo -u postgres -i'  # Run psql as postgres user
 
 # mirrors: 
-alias upm='rate-mirrors --disable-comments-in-file --entry-country=KG --protocol=https manjaro --max-delay 7200 | sudo tee /etc/pacman.d/mirrorlist'  # Update mirror list
+alias upm='rate-mirrors --disable-comments-in-file --entry-country=KG --protocol=https arch --max-delay 7200 | sudo tee /etc/pacman.d/mirrorlist'  # Update mirror list
+alias rum='sudo reflector --threads 8 --sort delay --country 'ca,*,us' --sort rate --latest 25 --age 12 --protocol https --delay 0.25 --latest 25 --save /etc/pacman.d/mirrorlist' # Update mirror list with reflector
 
 # Zoxide:  
 eval "$(zoxide init bash)"  # Initialize Zoxide for directory navigation

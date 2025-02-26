@@ -1,0 +1,21 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+if [ -f ~/.mycfg ]; then
+    source ~/.mycfg
+fi
+
+
+alias si='sudo pacman -S'  # Install package with apt
+alias sr='sudo pacman -Rns'  # Remove package with apt
+alias ss='sudo pacman -Ss'  # Search for package with apt
+alias suu='sudo pacman -Syy'  # Update and upgrade packages
+
+alias nf='fastfetch'
