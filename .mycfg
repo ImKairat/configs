@@ -136,3 +136,17 @@ alias rum='sudo reflector --threads 8 --sort delay --country 'ca,*,us' --sort ra
 
 # Zoxide:  
 eval "$(zoxide init bash)"  # Initialize Zoxide for directory navigation
+
+
+
+# Functions & binds:
+search_history() {
+    local cmd=$(history | fzf --height 40% | awk '{print substr($0, index($0,$2))}')
+    if [[ -n "$cmd" ]]; then
+        echo "Executing: $cmd"
+        eval "$cmd"
+    fi
+}
+
+bind '"\C-f": " \C-e\C-u search_history\n"'
+

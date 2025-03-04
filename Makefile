@@ -155,3 +155,6 @@ show:
 	@printf "\033[1;32mpsql:\033[0m %-40s   | \033[1;32mupm:\033[0m %-30s\n" "Run psql as postgres user" "Update mirror list"
 	@printf "\033[1;32meval:\033[0m %-40s   | \033[1;32mrum:\033[0m %-30s\n" "Initialize Zoxide for directory navigation" "Update mirror list with reflector"
 	@echo ""
+	@echo "\033[1;33mFunctions:$(COLOR_RESET)"
+	@printf "\033[1;32mctrl+f:\033[0m %-40s\n" "Find from history"
+	@echo ""
