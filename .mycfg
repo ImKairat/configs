@@ -29,14 +29,14 @@ alias n='nano'  # Open nano text editor
 alias ~='cd ~'  # Go to home directory
 alias r='cd /'  # Go to root directory
 alias m='ncdu'  # Open ncdu for disk usage
-alias si='sudo apt install'  # Install package with apt
-alias sr='sudo apt remove'  # Remove package with apt
-alias ss='sudo apt search'  # Search for package with apt
-alias suu='sudo apt upgrade && sudo apt update'  # Update and upgrade packages
+alias si='sudo pacman -S'  # Install package with apt
+alias sr='sudo pacman -Rns'  # Remove package with apt
+alias ss='sudo pacman -Ss'  # Search for package with apt
+alias suu='sudo pacman -Syu'  # Update and upgrade packages
 alias t='tmux'  # Start tmux session
 alias rg='ranger'  # Open ranger file manager
 alias bt='btop'  # Open btop for system monitoring
-alias nf='neofetch'  # Display system information
+alias nf='fastfetch'  # Display system information
 alias ipy='ipython'  # Start IPython shell
 alias h='history'  # Show command history
 alias i='tldr'  # Show simplified man pages
@@ -93,6 +93,7 @@ alias pir='pip install -r requirements.txt'  # Install packages from requirement
 alias pui='pip uninstall'  # Uninstall package with pip
 
 # Git-Aliases: 
+alias gc='git clone'
 alias gf='git fetch --all' 
 alias gpp='git pull --all && git push --all'
 alias glog='git log --all --graph'  # Show git log graph

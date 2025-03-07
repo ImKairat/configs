@@ -1,5 +1,5 @@
 # Define source and destination paths
-CONFIG_FILES = .mycfg .vimrc
+CONFIG_FILES = .mycfg .vimrc .inputrc
 DEST_DIR = $(HOME)
 BASHRC = $(HOME)/.bashrc
 
@@ -127,6 +127,7 @@ show:
 	@printf "\033[1;32mpui:\033[0m %-40s\n" "Uninstall package with pip"
 	@echo ""
 	@echo "\033[1;33mGit Commands:$(COLOR_RESET)"
+	@echo "\033[1;32mgc:\033[0m git clone"
 	@echo "\033[1;32mgf:\033[0m fetch all"
 	@echo "\033[1;32mgpp:\033[0m Pull and push all"
 	@echo "\033[1;32mglog:\033[0m Show git log graph"
