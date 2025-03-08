@@ -82,6 +82,7 @@ show:
 	@printf "\033[1;32mp:\033[0m %-40s |\n" "Copy current directory to clipboard"
 	@echo ""
 	@echo "\033[1;33mSystem Commands:$(COLOR_RESET)"
+	@printf "\033[1;32mci3:\033[0m %-40s" "Edit bashrc with sudo" "Edit i3 config with sudo"
 	@printf "\033[1;32mns:\033[0m %-40s | \033[1;32mbsh:\033[0m %-30s\n" "Show network statistics" "Edit bashrc with sudo"
 	@printf "\033[1;32msb:\033[0m %-40s | \033[1;32mmk:\033[0m %-30s\n" "Source bashrc to apply changes" "Run make command"
 	@printf "\033[1;32mrr:\033[0m %-40s | \033[1;32mcs:\033[0m %-30s\n" "Run rustrover" "Cursor command"

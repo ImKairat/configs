@@ -8,7 +8,8 @@
                                                
 ######################################################
 
-# System-Aliases:  
+# System-Aliases:
+alias ci3='sudo vim ~/.config/i3/config' # Edit i3 config with sudo
 alias as='pushd ~/configs > /dev/null  && make show && popd > /dev/null' # Show all available aliases
 alias c='clear'  # Clear the terminal
 alias b='cd -'  # Go back to the previous directory
