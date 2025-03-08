@@ -96,6 +96,7 @@ alias pui='pip uninstall'  # Uninstall package with pip
 # Git-Aliases: 
 alias gc='git clone'
 alias gf='git fetch --all' 
+alias gp='git push  --all' # Push all local changes
 alias gpp='git pull --all && git push --all'
 alias glog='git log --all --graph'  # Show git log graph
 alias glg='git log --all --graph --oneline'  # Show git log graph in one line

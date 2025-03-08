@@ -129,6 +129,7 @@ show:
 	@echo ""
 	@echo "\033[1;33mGit Commands:$(COLOR_RESET)"
 	@echo "\033[1;32mgc:\033[0m git clone"
+	@echo "\033[1;32mgp:\033[0m push all"
 	@echo "\033[1;32mgf:\033[0m fetch all"
 	@echo "\033[1;32mgpp:\033[0m Pull and push all"
 	@echo "\033[1;32mglog:\033[0m Show git log graph"
