@@ -53,6 +53,7 @@ alias mk='make'  # Run make command
 alias nv='nvim'  # Open Neovim
 alias v='vim'  # Open Vim
 alias vc='vim ~/.vimrc'  # Edit Vim configuration
+alias fh='history | fzf --height 40% | xclip -selection clipboard'  # Fuzzy find in history and copy to clipboard
 alias f='fzf --height 40% | xclip -selection clipboard'  # Fuzzy find and copy to clipboard
 alias fo='fzf | xdg-open'  # Fuzzy find and open file
 alias nff='nano $(fzf --height 40% )'  # Fuzzy find and edit with nano
@@ -149,4 +150,3 @@ search_history() {
 }
 
 bind '"\C-f": " \C-e\C-u search_history\n"'
-
