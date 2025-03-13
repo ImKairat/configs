@@ -89,6 +89,7 @@ show:
 	@printf "\033[1;32mo:\033[0m %-40s  | \033[1;32mn:\033[0m %-30s\n" "Open files with default application" "Open nano text editor"
 	@printf "\033[1;32m~:\033[0m %-40s  | \033[1;32mr:\033[0m %-30s\n" "Go to home directory" "Go to root directory"
 	@printf "\033[1;32mm:\033[0m %-40s  | \033[1;32mch:\033[0m %-30s\n" "Open ncdu for disk usage" "Clear current session history and reload the session"
+	@printf "\033[1;32msas:\033[0m %-40s" "Get all active services list"
 	@echo ""
 	@echo "\033[1;33mPackage Management Commands:$(COLOR_RESET)"
 	@printf "\033[1;32msi:\033[0m %-40s | \033[1;32msr:\033[0m %-30s\n" "Install package with apt" "Remove package with apt"

@@ -20,6 +20,7 @@ alias ns='netstat'  # Show network statistics
 alias bsh='sudo vim ~/.bashrc'  # Edit bashrc with sudo
 alias sb='source ~/.bashrc'  # Source bashrc to apply changes
 alias ch='history -c && history -w && clear'  # Clear current session history and reload the session
+alias sas='echo "Command: sudo systemctl list-units --type=service --state=running" && sudo systemctl list-units --type=service --state=running' # Get all active services.
 
 # Base-Aliases: 
 alias mk='make'  # Run make command
